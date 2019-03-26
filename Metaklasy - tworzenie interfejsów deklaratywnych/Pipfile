@@ -1,0 +1,19 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+jupyter = "*"
+sqlalchemy = "*"
+
+[requires]
+python_version = "3.7"
+
+[scripts]
+notebook = "jupyter notebook"
+slides = "jupyter nbconvert --to slides Prezentacja.ipynb"
+serve = "jupyter nbconvert --to slides --post serve Prezentacja.ipynb"
+
